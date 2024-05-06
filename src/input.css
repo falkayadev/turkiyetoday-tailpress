@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #880a0d;
+  --brand-red-opacity: #880a0d59;
+  --logo-red: #d43238;
+  --passive-text: #adadad;
+  --financial-bg: rgba(173, 173, 173, 0.1);
+  --text: #333;
+  --radar-bg: #fbfbfb;
+  --radar-border: #ebebeb;
+  --green: #508d68;
+}
+
+body {
+  @apply text-text;
+}
+
+.active {
+  @apply text-brand-red;
+}
