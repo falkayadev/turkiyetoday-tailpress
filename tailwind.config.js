@@ -16,6 +16,7 @@ module.exports = {
         "brad-red-opacity": "var(--brand-red-opacity)",
         "logo-red": "var(--logo-red)",
         "passive-text": "var(--passive-text)",
+        "passive-text-v2": "var(--passive-text-v2)",
         "financial-bg": "var(--financial-bg)",
         text: "var(--text)",
         "radar-bg": "var(--radar-bg)",
