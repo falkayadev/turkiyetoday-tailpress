@@ -78,13 +78,14 @@
         <!-- search input -->
         <div class="flex justify-between w-[60%]">
           <div class="border flex-1 relative">
-            <input type="text" />
-            <div
-              class="absolute top-1/2 -translate-y-1/2 left-4 flex gap-2 text-passive-text"
+            <input type="text" class="w-full h-full peer px-4" id="search" />
+            <label
+              for="search"
+              class="absolute top-1/2 -translate-y-1/2 left-4 flex gap-2 text-passive-text peer-focus:hidden"
             >
               <span><i class="fa-solid fa-magnifying-glass"></i></span>
               <span>Type something</span>
-            </div>
+            </label>
           </div>
           <button class="w-[113px] bg-brand-red text-white py-4">Search</button>
         </div>
