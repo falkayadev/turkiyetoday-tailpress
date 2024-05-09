@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Turkiye Today</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body">
+    <!-- header -->
+    <header class="w-full sticky top-0 left-0 bg-white z-50 border-b-2">
+      <!-- Logo Section -->
+      <div
+        class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
+      >
+        <div class="sm:hidden">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="hidden sm:block">
+          <span class="pr-4"><i class="fa-regular fa-user"></i></span>
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div>
+          <span>
+            <img src="/public/logo-default.png" alt="logo" />
+          </span>
+        </div>
+        <div>
+          <button
+            class="bg-brand-red w-24 sm:w-32 h-10 text-white uppercase font-semibold text-xs lg:text-base"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- navbar -->
+    <nav
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden sm:flex"
+    >
+      <a href="#" class="active">Türkiye</a>
+      <a href="#" class="hover:text-brand-red">Politics</a>
+      <a href="#" class="hover:text-brand-red">Op-Ed</a>
+      <a href="#" class="hover:text-brand-red">Business</a>
+      <a href="#" class="hover:text-brand-red">Tech</a>
+      <a href="#" class="hover:text-brand-red">Culture</a>
+      <a href="#" class="hover:text-brand-red">Lifestyle</a>
+      <a href="#" class="hover:text-brand-red">World</a>
+    </nav>
+
+    <main
+      class="container mx-auto flex flex-col lg:flex-row lg:justify-between w-full gap-10 mb-20 px-6 pt-10 md:p-0"
+    >
+      <form
+        class="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-4 lg:justify-between"
+      >
+        <!-- Breadcrumb -->
+        <div class="text-sm text-passive-text flex gap-2">
+          <span>Home</span>
+          <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <!-- Heading -->
+        <h2 class="font-heading font-extrabold text-4xl">Contact Us</h2>
+        <!-- Name/Surname -->
+        <div class="flex justify-between w-full gap-8">
+          <div class="flex flex-col w-1/2">
+            <label for="name" class="text-passive-text-v2">Name</label>
+            <input
+              type="text"
+              placeholder="Type here"
+              id="name"
+              required
+              class="border p-2"
+            />
+          </div>
+          <div class="flex flex-col w-1/2">
+            <label for="surname" class="text-passive-text-v2">Surname</label>
+            <input
+              type="text"
+              placeholder="Type here"
+              id="surname"
+              required
+              class="border p-2"
+            />
+          </div>
+        </div>
+        <!-- Phone/Email -->
+        <div class="flex justify-between w-full gap-8">
+          <div class="flex flex-col w-1/2">
+            <label for="name" class="text-passive-text-v2">Phone</label>
+            <input
+              type="text"
+              placeholder="Type here"
+              id="phone"
+              required
+              class="border p-2"
+            />
+          </div>
+          <div class="flex flex-col w-1/2">
+            <label for="surname" class="text-passive-text-v2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              placeholder="Type here"
+              id="email"
+              required
+              class="border p-2"
+            />
+          </div>
+        </div>
+        <!-- TextArea -->
+        <div class="w-full">
+          <label for="message">Your Message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="w-full border p-2"
+            placeholder="Type here"
+            rows="6"
+          ></textarea>
+        </div>
+        <!-- Submit Button -->
+        <button
+          class="w-full p-4 flex justify-center items-center gap-2 bg-brand-red text-white font-semibold"
+        >
+          <span class="text-sm">Send Form</span>
+          <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </form>
+      <div class="w-full lg:w-1/2">
+        <div class="w-full h-full border">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2272.774095801788!2d28.81801408185506!3d41.00468523015712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4815256dac7%3A0x3cda1157ce3754fa!2zxLBobGFzIEhvbGRpbmcgQS7Fni4!5e0!3m2!1sen!2str!4v1715255589437!5m2!1sen!2str"
+            class="w-full h-full"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
