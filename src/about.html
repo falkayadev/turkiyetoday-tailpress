@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Turkiye Today</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-body">
+    <!-- header -->
+    <header class="w-full sticky top-0 left-0 bg-white z-50 border-b-2">
+      <!-- Logo Section -->
+      <div
+        class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
+      >
+        <div class="sm:hidden">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="hidden sm:block">
+          <span class="pr-4"><i class="fa-regular fa-user"></i></span>
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div>
+          <span>
+            <img src="/public/logo-default.png" alt="logo" />
+          </span>
+        </div>
+        <div>
+          <button
+            class="bg-brand-red w-24 sm:w-32 h-10 text-white uppercase font-semibold text-xs lg:text-base"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- navbar -->
+    <nav
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden sm:flex"
+    >
+      <a href="#" class="active">Türkiye</a>
+      <a href="#" class="hover:text-brand-red">Politics</a>
+      <a href="#" class="hover:text-brand-red">Op-Ed</a>
+      <a href="#" class="hover:text-brand-red">Business</a>
+      <a href="#" class="hover:text-brand-red">Tech</a>
+      <a href="#" class="hover:text-brand-red">Culture</a>
+      <a href="#" class="hover:text-brand-red">Lifestyle</a>
+      <a href="#" class="hover:text-brand-red">World</a>
+    </nav>
+
+    <section class="container mx-auto flex flex-col gap-12 px-4 md:px-0 mb-40">
+      <header class="flex flex-col gap-2">
+        <!-- Breadcrumb -->
+        <div class="text-passive-text">
+          <span class="text-sm">Home</span>
+          <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+        <!-- Heading -->
+        <h2 class="text-4xl font-heading font-extrabold">About Us</h2>
+      </header>
+      <main class="flex flex-col gap-16">
+        <!-- Introduction -->
+        <div class="flex flex-col gap-4 text-passive-text">
+          <p>
+            Türkiye Today is a news and content platform that brings the latest
+            developments from Türkiye, the region, and around the world to its
+            global audiences in a fair, unbiased and truthful manner. Türkiye
+          </p>
+          <p>
+            Apart from daily news, at Türkiye Today, we provide our audiences
+            with in-depth analyses, breakdowns of the latest developments, and
+            insights into the region's culture, politics, and lifestyle, all
+            supported with original video and social media content production.
+          </p>
+          <p>Today is part of the Ihlas Media Group.</p>
+        </div>
+
+        <!-- Team -->
+        <div class="grid grid-cols-3 md:flex md:flex-col gap-6">
+          <div>
+            <p class="text-text leading-3">Editor-in-Chief</p>
+            <p class="text-brand-red text-lg leading-5">
+              Osman Bahattin Dirlik
+            </p>
+          </div>
+          <div>
+            <p class="text-text leading-3">News Manager</p>
+            <p class="text-brand-red text-lg leading-5">Ahmet Kocak</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">News Chief</p>
+            <p class="text-brand-red text-lg leading-5">Dogacan Basaran</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Social Media Chief</p>
+            <p class="text-brand-red text-lg leading-5">Kemal Efe Turkyilmaz</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Anchor</p>
+            <p class="text-brand-red text-lg leading-5">Murad Ayalp</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Copy Editor</p>
+            <p class="text-brand-red text-lg leading-5">Aatika Ahmed</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Copy Editor</p>
+            <p class="text-brand-red text-lg leading-5">Fatima Rehman</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Video Editor</p>
+            <p class="text-brand-red text-lg leading-5">Samet Doger</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Selin Atay</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Selin Hacialioglu</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Sanem Topal</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Yusuf Ulucam</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Yagiz Efe Parmaksiz</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Ahmet Erarslan</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Ecehan Tanisik</p>
+          </div>
+          <div>
+            <p class="text-text leading-3">Editor</p>
+            <p class="text-brand-red text-lg leading-5">Koray Erdogan</p>
+          </div>
+        </div>
+      </main>
+      <!-- Subscription -->
+      <section
+        class="container mx-auto bg-radar-bg w-full p-6 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div class="flex gap-2 w-full">
+          <span class="text-brand-red text-5xl leading-6"
+            ><i class="fa-solid fa-envelope"></i
+          ></span>
+          <p
+            class="font-heading font-extrabold text-xl w-full leading-6 max-w-72"
+          >
+            Subscribe To Our Mailing List To Get the New Updates!
+          </p>
+        </div>
+        <div class="flex flex-col w-full">
+          <div class="w-full flex">
+            <input type="text" class="w-full border p-2 bg-inherit" />
+            <button class="bg-brand-red text-white px-6">Subscribe</button>
+          </div>
+          <p class="text-logo-red text-xs">
+            This mail adress has already been in use
+          </p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
