@@ -23,12 +23,15 @@
   </head>
   <body class="font-body">
     <!-- header -->
-    <header class="w-full border-b-2">
+    <header class="w-full sticky top-0 left-0 bg-white z-50">
       <!-- Logo Section -->
       <div
-        class="w-full container mx-auto flex justify-between items-center h-32"
+        class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
       >
-        <div>
+        <div class="sm:hidden">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="hidden sm:block">
           <span class="pr-4"><i class="fa-regular fa-user"></i></span>
           <span><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
@@ -39,16 +42,43 @@
         </div>
         <div>
           <button
-            class="bg-brand-red w-32 h-10 text-white uppercase font-semibold text-base"
+            class="bg-brand-red w-24 sm:w-32 h-10 text-white uppercase font-semibold text-xs lg:text-base"
           >
             Subscribe
           </button>
         </div>
       </div>
+      <!-- Breaking News Section -->
+      <div
+        class="w-full h-12 whitespace-nowrap p-4 bg-logo-red flex items-center text-white"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <div>
+            <span
+              class="uppercase font-heading font-extrabold text-2xl hidden lg:block"
+              >Breaking News</span
+            >
+          </div>
+          <div>
+            <span class="text-base md:text-xl font-bold truncate"
+              >Why Are Thousands Protesting Against Netenyahu's...</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <span class="text-base font-semibold hidden md:block"
+              >Read more...</span
+            >
+            <div>
+              <span><i class="fa-solid fa-chevron-left opacity-40"></i></span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- navbar -->
     <nav
-      class="container mx-auto flex items-center justify-between h-20 font-nav font-bold text-xl text-passive-text"
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden sm:flex"
     >
       <a href="#" class="active">Türkiye</a>
       <a href="#" class="hover:text-brand-red">Politics</a>
@@ -66,14 +96,16 @@
           <span>Home</span>
           <span><i class="fa-solid fa-chevron-right"></i></span>
         </div>
-        <h1 class="text-4xl font-extrabold font-heading">Privacy Policy</h1>
+        <h1 class="text-3xl lg:text-4xl font-extrabold font-heading">
+          Privacy Policy
+        </h1>
       </div>
 
       <div>
-        <h2 class="font-bold text-2xl">
+        <h2 class="font-bold text-xl lg:text-2xl">
           INFORMATIVE TEXT UNDER THE LAW ON PROTECTION OF PERSONAL DATA
         </h2>
-        <p class="text-xl text-passive-text-v2">
+        <p class="text-lg lg:text-xl text-passive-text-v2">
           As Turkuvaz Haberleşme ve Yayıncılık A.Ş., we are processing your
           personal data, and at the same time, using our best efforts to protect
           your data by taking the technical and administrative measures
@@ -82,8 +114,8 @@
         </p>
       </div>
       <div>
-        <h2 class="font-bold text-2xl">DEFINITIONS</h2>
-        <p class="text-xl text-passive-text-v2">
+        <h2 class="font-bold text-xl lg:text-2xl">DEFINITIONS</h2>
+        <p class="text-lg lg:text-xl text-passive-text-v2">
           The following terms mentioned in this text shall refer to the meanings
           specified below: Personal Data: Any information relating to an
           identified or identifiable real person, Processing of Personal Data:
@@ -101,10 +133,10 @@
         </p>
       </div>
       <div>
-        <h2 class="font-bold text-2xl">
+        <h2 class="font-bold text-xl lg:text-2xl">
           COLLECTION AND PROCESSING OF PERSONAL DATA
         </h2>
-        <p class="text-xl text-passive-text-v2">
+        <p class="text-lg lg:text-xl text-passive-text-v2">
           The data supervisor in respect of your data processed on the
           websiteTurkuvaz Haberleşme ve Yayıncılık A.Ş. Turkuvaz processes your
           personal data within the frame of the limits stipulated by all the
@@ -170,7 +202,9 @@
         </p>
       </div>
       <div>
-        <h2 class="font-bold text-2xl">TRANSFER OF YOUR PERSONAL DATA</h2>
+        <h2 class="font-bold text-xl lg:text-2xl">
+          TRANSFER OF YOUR PERSONAL DATA
+        </h2>
         <p class="text-xl text-passive-text-v2">
           Your personal data can be transferred to; Our business partners,
           supplier companies, group companies and shareholders with which we
@@ -189,10 +223,10 @@
         </p>
       </div>
       <div>
-        <h2 class="font-bold text-2xl">
+        <h2 class="font-bold text-xl lg:text-2xl">
           YOUR RIGTS REGARDING THE PROTECTION OF YOUR PERSONAL DATA
         </h2>
-        <p class="text-xl text-passive-text-v2">
+        <p class="text-lg lg:text-xl text-passive-text-v2">
           With regard to your personal data, you have the right to;find out
           whether your personal data is processed;request information, if they
           are processed;To learn about the purpose of processing and to find out
