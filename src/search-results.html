@@ -23,12 +23,15 @@
   </head>
   <body class="font-body">
     <!-- header -->
-    <header class="w-full border-b-2">
+    <header class="w-full sticky top-0 left-0 bg-white z-50">
       <!-- Logo Section -->
       <div
-        class="w-full container mx-auto flex justify-between items-center h-32"
+        class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
       >
-        <div>
+        <div class="sm:hidden">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="hidden sm:block">
           <span class="pr-4"><i class="fa-regular fa-user"></i></span>
           <span><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
@@ -39,16 +42,43 @@
         </div>
         <div>
           <button
-            class="bg-brand-red w-32 h-10 text-white uppercase font-semibold text-base"
+            class="bg-brand-red w-24 sm:w-32 h-10 text-white uppercase font-semibold text-xs lg:text-base"
           >
             Subscribe
           </button>
         </div>
       </div>
+      <!-- Breaking News Section -->
+      <div
+        class="w-full h-12 whitespace-nowrap p-4 bg-logo-red flex items-center text-white"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <div>
+            <span
+              class="uppercase font-heading font-extrabold text-2xl hidden lg:block"
+              >Breaking News</span
+            >
+          </div>
+          <div>
+            <span class="text-base md:text-xl font-bold truncate"
+              >Why Are Thousands Protesting Against Netenyahu's...</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <span class="text-base font-semibold hidden md:block"
+              >Read more...</span
+            >
+            <div>
+              <span><i class="fa-solid fa-chevron-left opacity-40"></i></span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- navbar -->
     <nav
-      class="container mx-auto flex items-center justify-between h-20 font-nav font-bold text-xl text-passive-text"
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden sm:flex"
     >
       <a href="#" class="active">Türkiye</a>
       <a href="#" class="hover:text-brand-red">Politics</a>
@@ -60,7 +90,9 @@
       <a href="#" class="hover:text-brand-red">World</a>
     </nav>
 
-    <main class="flex flex-col gap-12 container mx-auto py-8 px-10 lg:px-0">
+    <main
+      class="flex flex-col gap-0 lg:gap-12 container mx-auto py-8 px-10 lg:px-0"
+    >
       <header class="flex flex-col gap-8 items-center pb-12">
         <!-- breadcrumb -->
         <div class="flex items-center gap-2 text-passive-text text-sm">
@@ -76,7 +108,7 @@
           <span class="text-xl">search results</span>
         </div>
         <!-- search input -->
-        <div class="flex justify-between w-[60%]">
+        <div class="flex justify-between w-full lg:w-[60%]">
           <div class="border flex-1 relative">
             <input type="text" class="w-full h-full peer px-4" id="search" />
             <label
@@ -87,13 +119,12 @@
               <span>Type something</span>
             </label>
           </div>
-          <button class="w-[113px] bg-brand-red text-white py-4">Search</button>
+          <button class="w-[113px] bg-brand-red text-white py-2 lg:py-4">
+            Search
+          </button>
         </div>
       </header>
       <section class="flex flex-col gap-6">
-        <h3 class="font-nav text-xl font-bold text-brand-red">
-          MORE FROM AUTHOR
-        </h3>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
           <div class="grid lg:col-span-3 grid-cols-1 lg:grid-cols-3 gap-10">
             <div class="flex flex-col gap-2 lg:col-span-1">
@@ -353,12 +384,19 @@
           <div class="lg:col-span-1 flex flex-col gap-14">
             <!-- subscribe -->
             <div class="bg-radar-bg border p-4 flex flex-col gap-4">
-              <span class="flex justify-center"
-                ><i class="fa-solid fa-envelope text-brand-red text-4xl"></i
-              ></span>
-              <p class="font-extrabold font-heading text-xl text-center">
-                Subscribe To Our Mailing List To Get the New Updates!
-              </p>
+              <!-- icon and heading -->
+              <div
+                class="flex flex-row lg:flex-col gap-4 lg:gap-0 w-2/3 lg:w-full"
+              >
+                <span class="flex items-baseline justify-center"
+                  ><i class="fa-solid fa-envelope text-brand-red text-4xl"></i
+                ></span>
+                <p
+                  class="font-extrabold font-heading text-lg lg:text-xl lg:text-center leading-5 lg:leading-normal"
+                >
+                  Subscribe To Our Mailing List To Get the New Updates!
+                </p>
+              </div>
               <div class="flex justify-between border w-full">
                 <div class="relative">
                   <input type="text" class="w-2/3 absolute" />
