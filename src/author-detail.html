@@ -23,12 +23,15 @@
   </head>
   <body class="font-body">
     <!-- header -->
-    <header class="w-full border-b-2">
+    <header class="w-full sticky top-0 left-0 bg-white z-50">
       <!-- Logo Section -->
       <div
-        class="w-full container mx-auto flex justify-between items-center h-32"
+        class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
       >
-        <div>
+        <div class="sm:hidden">
+          <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <div class="hidden sm:block">
           <span class="pr-4"><i class="fa-regular fa-user"></i></span>
           <span><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
@@ -39,16 +42,43 @@
         </div>
         <div>
           <button
-            class="bg-brand-red w-32 h-10 text-white uppercase font-semibold text-base"
+            class="bg-brand-red w-24 sm:w-32 h-10 text-white uppercase font-semibold text-xs lg:text-base"
           >
             Subscribe
           </button>
         </div>
       </div>
+      <!-- Breaking News Section -->
+      <div
+        class="w-full h-12 whitespace-nowrap p-4 bg-logo-red flex items-center text-white"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <div>
+            <span
+              class="uppercase font-heading font-extrabold text-2xl hidden lg:block"
+              >Breaking News</span
+            >
+          </div>
+          <div>
+            <span class="text-base md:text-xl font-bold truncate"
+              >Why Are Thousands Protesting Against Netenyahu's...</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <span class="text-base font-semibold hidden md:block"
+              >Read more...</span
+            >
+            <div>
+              <span><i class="fa-solid fa-chevron-left opacity-40"></i></span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- navbar -->
     <nav
-      class="container mx-auto flex items-center justify-between h-20 font-nav font-bold text-xl text-passive-text"
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden md:flex px-8 lg:px-0"
     >
       <a href="#" class="active">Türkiye</a>
       <a href="#" class="hover:text-brand-red">Politics</a>

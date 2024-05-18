@@ -23,7 +23,7 @@
   </head>
   <body class="font-body">
     <!-- header -->
-    <header class="w-full sticky top-0 left-0 bg-white z-50 border-b-2">
+    <header class="w-full sticky top-0 left-0 bg-white z-50">
       <!-- Logo Section -->
       <div
         class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
@@ -48,10 +48,37 @@
           </button>
         </div>
       </div>
+      <!-- Breaking News Section -->
+      <div
+        class="w-full h-12 whitespace-nowrap p-4 bg-logo-red flex items-center text-white"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <div>
+            <span
+              class="uppercase font-heading font-extrabold text-2xl hidden lg:block"
+              >Breaking News</span
+            >
+          </div>
+          <div>
+            <span class="text-base md:text-xl font-bold truncate"
+              >Why Are Thousands Protesting Against Netenyahu's...</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <span class="text-base font-semibold hidden md:block"
+              >Read more...</span
+            >
+            <div>
+              <span><i class="fa-solid fa-chevron-left opacity-40"></i></span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- navbar -->
     <nav
-      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden sm:flex"
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden md:flex px-8 lg:px-0"
     >
       <a href="#" class="active">Türkiye</a>
       <a href="#" class="hover:text-brand-red">Politics</a>
@@ -63,7 +90,7 @@
       <a href="#" class="hover:text-brand-red">World</a>
     </nav>
 
-    <section class="container mx-auto flex flex-col gap-12 px-4 md:px-0 mb-40">
+    <section class="container mx-auto flex flex-col gap-12 px-4 md:px-0 my-10">
       <header class="flex flex-col gap-2">
         <!-- Breadcrumb -->
         <div class="text-passive-text">

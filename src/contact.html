@@ -23,7 +23,7 @@
   </head>
   <body class="font-body">
     <!-- header -->
-    <header class="w-full sticky top-0 left-0 bg-white z-50 border-b-2">
+    <header class="w-full sticky top-0 left-0 bg-white z-50">
       <!-- Logo Section -->
       <div
         class="w-full container mx-auto flex justify-evenly lg:justify-between items-center h-20 sm:h-32 px-4 lg:px-0"
@@ -48,10 +48,37 @@
           </button>
         </div>
       </div>
+      <!-- Breaking News Section -->
+      <div
+        class="w-full h-12 whitespace-nowrap p-4 bg-logo-red flex items-center text-white"
+      >
+        <div class="container mx-auto flex justify-between items-center">
+          <div>
+            <span
+              class="uppercase font-heading font-extrabold text-2xl hidden lg:block"
+              >Breaking News</span
+            >
+          </div>
+          <div>
+            <span class="text-base md:text-xl font-bold truncate"
+              >Why Are Thousands Protesting Against Netenyahu's...</span
+            >
+          </div>
+          <div class="flex gap-8">
+            <span class="text-base font-semibold hidden md:block"
+              >Read more...</span
+            >
+            <div>
+              <span><i class="fa-solid fa-chevron-left opacity-40"></i></span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- navbar -->
     <nav
-      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden sm:flex"
+      class="container mx-auto items-center justify-between h-20 font-nav font-bold text-xl text-passive-text hidden md:flex px-8 lg:px-0"
     >
       <a href="#" class="active">Türkiye</a>
       <a href="#" class="hover:text-brand-red">Politics</a>
@@ -64,7 +91,7 @@
     </nav>
 
     <main
-      class="container mx-auto flex flex-col lg:flex-row lg:justify-between w-full gap-10 mb-20 px-6 pt-10 md:p-0"
+      class="container mx-auto flex flex-col lg:flex-row lg:justify-between w-full gap-10 mb-20 px-8 pt-10 lg:p-0"
     >
       <form
         class="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-4 lg:justify-between"
@@ -144,7 +171,7 @@
         </button>
       </form>
       <div class="w-full lg:w-1/2">
-        <div class="w-full h-full border">
+        <div class="w-full aspect-video md:h-full border">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2272.774095801788!2d28.81801408185506!3d41.00468523015712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4815256dac7%3A0x3cda1157ce3754fa!2zxLBobGFzIEhvbGRpbmcgQS7Fni4!5e0!3m2!1sen!2str!4v1715255589437!5m2!1sen!2str"
             class="w-full h-full"
